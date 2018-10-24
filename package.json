@@ -1,0 +1,36 @@
+{
+  "name": "@kluseg/googlemaps-helper",
+  "version": "0.1.0",
+  "description": "A simple wrapper for Google Maps Javascript API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/babel index.js --out-file ./build/googlemaps-helper.js --presets=@babel/preset-env --plugins=babel-minify",
+    "minify": "./node_modules/.bin/babel-minify ./build/googlemaps-helper.js --out-file ./build/googlemaps-helper.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KluseG/googlemaps-helper.git"
+  },
+  "keywords": [
+    "google",
+    "maps",
+    "javascript",
+    "api",
+    "helper",
+    "wrapper"
+  ],
+  "author": "Adrian Kluska <a.kluska98@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KluseG/googlemaps-helper/issues"
+  },
+  "homepage": "https://github.com/KluseG/googlemaps-helper#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "babel-minify": "^0.5.0"
+  },
+  "browserslist": "> 0.25%, not dead"
+}
