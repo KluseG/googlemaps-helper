@@ -162,7 +162,11 @@ function mapInit() {
 }
 ```
 
-Done!
+Done! If you want, you can change the map center by calling `setCenterOn` method anytime.
+
+```javascript
+map.setCenterOn('Addres to geocode');
+```
 
 ## But why?
 
